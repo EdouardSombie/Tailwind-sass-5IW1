@@ -234,6 +234,60 @@ body {
   font-family: "Istok Web", sans-serif;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --blue-50: #b6cbec;
+  --blue-100: #96b5e3;
+  --blue-200: #769eda;
+  --blue-300: #5687d2;
+  --blue-400: #3670c9;
+  --blue-500: #2d5ea9;
+  --blue-600: #244c89;
+  --blue-700: #1c3a69;
+  --blue-800: #132848;
+  --blue-900: #0b1628;
+  --blue-950: #020408;
+  --pink-50: #fff4fa;
+  --pink-100: #ffcbe6;
+  --pink-200: #ffa2d2;
+  --pink-300: #ff7abe;
+  --pink-400: #ff51aa;
+  --pink-500: #ff2896;
+  --pink-600: #fe0082;
+  --pink-700: #d5006d;
+  --pink-800: #ad0058;
+  --pink-900: #840043;
+  --pink-950: #5b002f;
+  --orange-50: white;
+  --orange-100: white;
+  --orange-200: #ffeadf;
+  --orange-300: #ffd0b7;
+  --orange-400: #ffb58e;
+  --orange-500: #ff9b65;
+  --orange-600: #ff813c;
+  --orange-700: #ff6613;
+  --orange-800: #ea5200;
+  --orange-900: #c14400;
+  --orange-950: #983500;
+  --green-50: #a2ffff;
+  --green-100: #79ffff;
+  --green-200: #50ffff;
+  --green-300: #28ffff;
+  --green-400: #00fefe;
+  --green-500: #00d5d5;
+  --green-600: #00acac;
+  --green-700: #008383;
+  --green-800: #005b5b;
+  --green-900: #003232;
+  --green-950: #000909;
+}
+
 .mt-0 {
   margin-top: 0rem !important;
 }
@@ -318,6 +372,39 @@ body {
   .container {
     width: 1280px;
   }
+}
+
+.bioCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;
+  width: 20rem;
+  border-radius: 1rem;
+  background-color: var(--blue-700);
+  position: relative;
+  overflow: hidden;
+}
+.bioCard__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 0;
+}
+.bioCard__button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */
